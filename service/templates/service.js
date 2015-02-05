@@ -1,6 +1,6 @@
-angular.module('<%= appname %>').factory('<%= _.camelize(name) %>',function() {
+angular.module('<%= appname %>').factory('<%= _.capitalize(name) %>',function() {
 
-    var <%= _.camelize(name) %> = {};
+    var <%= _.capitalize(name) %> = {};
 
-    return <%= _.camelize(name) %>;
+    return <%= _.capitalize(name) %>;
 });
