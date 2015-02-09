@@ -1,3 +1,4 @@
+'use strict';
 angular.module('<%= appname %>').factory('<%= _.capitalize(name) %>',function() {
 
     var <%= _.capitalize(name) %> = {};
