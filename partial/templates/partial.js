@@ -1,4 +1,11 @@
-angular.module('<%= appname %>').controller('<%= ctrlname %>',function($scope){
+(function(){
+  'use strict';
+  angular
+        .module('<%= appname %>')
+        .controller('<%= ctrlname %>', <%= ctrlname %>);
 
+  function <%= ctrlname %>($scope){
 
-});
+  }
+
+})();

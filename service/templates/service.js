@@ -1,6 +1,15 @@
-angular.module('<%= appname %>').factory('<%= _.capitalize(name) %>',function() {
+(function(){
+    'use strict';
+    angular
+      .module('<%= appname %>')
+      .factory('<%= _.capitalize(name) %>', <%= _.capitalize(name) %>);
 
-    var <%= _.capitalize(name) %> = {};
+    function <%= _.capitalize(name) %>(){
+        var service = {
 
-    return <%= _.capitalize(name) %>;
-});
+        };
+        return service;
+
+    }
+
+})();
