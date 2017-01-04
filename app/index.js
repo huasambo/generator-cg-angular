@@ -67,12 +67,12 @@ CgangularGenerator.prototype.askForUiRouter = function askFor() {
             this.uirouter = true;
             this.routerJs = 'bower_components/angular-ui-router/release/angular-ui-router.js';
             this.routerModuleName = 'ui.router';
-            this.routerViewDirective = 'ui-view';
+            this.routerViewDirective = 'data-ui-view';
         } else {
             this.uirouter = false;
             this.routerJs = 'bower_components/angular-route/angular-route.js';
             this.routerModuleName = 'ngRoute';
-            this.routerViewDirective = 'ng-view';
+            this.routerViewDirective = 'data-ng-view';
         }
         this.config.set('uirouter',this.uirouter);
         cb();
